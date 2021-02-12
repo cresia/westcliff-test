@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Contact Form</title>
+</head>
+
+<body> <center>
+
+  <div class="container">
+    <header>
+
+      <h1>
+        Pet Adoption Service
+      </h1>
+
+        <div class="main-header">
+          <nav>
+            <ul style="list-style-type: none; font-size:25px">
+              <li><a href="index.html" class="fa fa-home">Home</a></li>
+              <li><a href="animal-types.html" class='fas fa-dog'>View Pets</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html" class="fas fa-address-book">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <img src="images/contact3.jpg" alt="dog1" width="600" class="zoomImg">
+
+
+
+
+    </header>
+
+    <main>
+     <h1>Contact Us for Further Information</h1>
+
+
+        <form action="/contact-us " method="POST">
+          <fieldset>
+            <br> <label for="name">Full Name:</label> <br>
+            <input type="text" name="name"> <br>
+            <br> <label for="phone">Phone Number:</label> <br>
+            <input type="tel" name="phone"> <br>
+            <br> <label for="email">Email:</label> <br>
+            <input type="email" name="email"> <br>
+            <br> <br> <label for="animal-type">Select Your Favorite Animal Types:</label> <br>
+            <br> <input type="radio" name="animal-type" value="husky">Husky
+            <input type="radio" name="animal-type" value="husky">Shiba
+            <input type="radio" name="animal-type" value="husky">German Shephered
+            <input type="radio" name="animal-type" value="husky">Bulldog
+            <input type="radio" name="animal-type" value="husky">Golden Retriever <br>
+
+            <br> <br> <label>How should we contact you?</label><br>
+            <br> <select id="mySelect" onchange="myFunction()">
+                <option value="" disabled selected>Select One</option>
+                <option>Email</option>
+                <option>Phone</option>
+            </select><br>
+
+            <p id="textSelection"></p>
+
+
+            <br> <br> <label for="">Tell Us about your questions:</label><br>
+            <textarea cols="30" rows="5"></textarea><br>
+            <br> <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+
+    </main>
+
+    <br>
+
+    <footer>
+      <div class="copy" style="margin-top:20px">
+       &copy Copyright 2021 :: petAdoption.com
+      </div>
+    </footer>
+
+  </div>
+  <!--End of container-->
+</center>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("textSelection").innerHTML = 'Enter Your ' + x + "<div> <input type='text'> </div>"
+  }
+
+
+</script>
+
+
+
+</body>
+
+</html>

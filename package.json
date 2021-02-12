@@ -1,0 +1,26 @@
+{
+  "name": "webdev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cresia/westcliff-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cresia/westcliff-test/issues"
+  },
+  "homepage": "https://github.com/cresia/westcliff-test#readme",
+  "description": "",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

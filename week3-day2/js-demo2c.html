@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Third Web Page</title>
+  <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+  <!--- Container to wrap everything --->
+  <div id="container">
+
+    <header>My Web Site Brand</header>
+
+    <nav>
+      <ul>
+        <li><a href="css-demo2.html">Home</a></li>
+        <li><a href="css-demo2b.html">About</a></li>
+        <li><a href="js-demo2d.html">Gallery</a></li>
+        <li><a href="css-demo2c.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>My Third Heading</h1>
+      <p>My Third Paragraph</p>
+
+
+      <form action="/signup" method="post">
+        <fieldset>
+          <legend>User personal information</legend>
+          <label for="name">Enter your full name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Enter your email</label>
+          <input type="email" name="email" id="email">
+          <label for="phone">Enter your phone</label>
+          <input type="text" name="phone" id="phone">
+          <label>Select your gender</label>
+          <input type="radio" name="gender" id="male" value="male">
+            <label class="noblock" for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+            <label class="noblock" for="female">Female</label>
+          <label>How should we contact you?</label>
+          <select>
+            <option>Email</option>
+            <option>Phone</option>
+          </select>
+          <label>Tell us the reason of your visit today:</label>
+
+          <textarea cols="30" rows="5"></textarea>
+          <input type="submit" value="sign-up">
+        </fieldset>
+      </form>
+
+    </main>
+
+    <footer>&copy;Copyright 2021</footer>
+
+  </div>
+  <!--- End Container --->
+
+</body>
+
+</html>

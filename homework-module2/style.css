@@ -1,0 +1,375 @@
+/* Header */
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+}
+
+#home header {
+  background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+  background-size: 1500px;
+}
+
+#activities header {
+  background: no-repeat lightgrey url(images/runfly.jpg);
+  background-size: 1500px;
+}
+
+#contact header {
+  background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-size: 1500px;
+}
+
+#cliff header {
+  background: no-repeat lightgrey url(images/forest_cliff.jpg);
+  background-size: 1500px;
+}
+
+.main-header {
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 700px;
+  margin: 2em auto 0 auto;
+  min-height: 100px;
+  height: 100px;
+}
+
+.main-header .logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 2em 0 0;
+  float: left;
+}
+
+/*Navigation*/
+.main-menu {
+  margin-left: 227px;
+  font-weight: 400;
+}
+
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid rgba(202, 204, 202, 0.6);
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: #888;
+}
+
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+
+.main-menu ul li.active {
+  background: #9ed034;
+  border: none;
+}
+
+.main-menu ul li.active a {
+  color: #fff;
+}
+
+/* Main */
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9ed034;
+}
+
+main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Partners */
+section {
+  width: 100%;
+  background-color: #4288c3;
+}
+
+section #partners {
+  width: 1200px;
+  padding: 2em 0 2em 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section #partners .partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+section #partners .partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 155px;
+  padding-bottom: 1em;
+  background-color: #ecfab8;
+}
+
+footer #nondisclaimer .copy {
+  padding: 3.5em 3.5em 3.5em 13em;
+  float:left;
+  font-size: 0.9em;
+}
+
+footer #nondisclaimer .social {
+  padding: 2.5em;
+  margin-left: 9.25em;
+  float: right;
+}
+
+footer #disclaimer {
+  clear: both;
+}
+
+footer #disclaimer p {
+  font-size: 0.85em;
+  text-align: center;
+}
+
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+table {
+  width: 1000px;
+  margin: 4em auto 0 auto;
+}
+
+caption {
+  background: #852B1B;
+  height: 40px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+thead {
+  background: #BDE1FF;
+}
+
+tbody {
+  background: #EEFFE6;
+  text-align: center;
+}
+
+th, td {
+  width: 225px;
+  height: 75px;
+  vertical-align: middle;
+  border: solid 1px #852B1B;
+}
+
+th:first-child {
+  width: 125px;
+  height: 50px;
+  background: #4977D1;
+  color: #fff;
+}
+
+td:first-child {
+  font-weight: bold;
+  background: #BDE1FF;
+}
+
+
+fieldset {
+  margin: 1.5rem 0 3rem 0;
+  border: 2px solid #9ed034;
+  padding:2rem;
+}
+
+main h1{
+  color:  #9ed034;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span:first-child {
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 600;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4977D1;
+}
+
+label{
+  font-weight: bold;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0 0 0;
+}
+
+#codes {
+  display: inline;
+  background-color: rgb(180, 188, 196);
+  padding:0.8rem;
+  text-align: center;
+}
+
+.randomcode {
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+
+form .button input{
+  font-size: 1em;
+  font-weight: bold;
+  /* background-color: #4977D1; */
+  color: #fff;
+  border: none;
+  width:8rem;
+  height:3rem;
+  margin-top:1rem;
+  margin-left:17.5rem;
+}
+
+.radios {
+  margin: 1rem 0 1rem 0;
+}
+
+.radios label {
+  display: inline;
+}
+
+.radios input {
+  width:30px;
+}
+
+.selectmenu label {
+  display: inline;
+}
+
+select {
+  width:150px;
+}
+
+.contactinfo {
+  line-height: 30px;
+}
+
+textarea{
+  width: 400px;
+  height:200px;
+}
+
+main {
+  margin: 5rem 6rem 5rem 6rem;
+}
+
+
+/* cliff page row images */
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 20px;
+}
+
+.cliffTitle {
+  background-color: #852B1B;
+  color:white;
+  font-size:15px;
+  font-weight: bold;
+  width:80.5%;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*
+Font: Arial, Helvetica, sans-serif
+• Font colors: #3a3a3a, #125688
+• Linear gradient color: 0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100% */
+
+#timeofday {
+  text-align: center;
+  background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+  height:40px;
+  margin-top: 15rem;
+  padding-top:1rem;
+}
+
+span:first-child{
+  color: #3a3a3a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#clock {
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #125688;
+}
+
+
+/*Display box selected*/
+#activities main #displaySelected {
+  visibility:hidden;
+  margin: 0 auto;
+  width:600px;
+  border: 2px solid #9ed034;
+  padding: 0.75em;
+}
+
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+  display: inline-block;
+  margin: 0;
+}
+
+#activities main #result h4 {
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+  width:200px;
+}
