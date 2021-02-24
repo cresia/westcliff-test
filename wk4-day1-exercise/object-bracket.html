@@ -5,12 +5,12 @@
 <h2>JavaScript Objects</h2>
 
 <script>
-let school = { 
-    name: 'WestCliff School', 
-    displayInfo : function(){ 
-        console.log(`${school.name}`); 
-    } 
-} 
+let school = {
+    name: 'WestCliff School',
+    displayInfo : function(){
+        console.log(`${school.name.split(' ')[0]}`);
+    }
+}
 school.displayInfo();
 
 </script>

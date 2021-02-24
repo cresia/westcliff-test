@@ -6,13 +6,15 @@
 
 <script>
 
-    function Vehicle(name, maker) { 
-        this.name = name; 
-        this.maker = maker; 
-    } 
+    function Vehicle(name, maker) {
+        this.name = name;
+        this.maker = maker;
+    }
 
-    let car1 = new Vehicle(); // 'Focus', 'Ford'
-    let car2 = new Vehicle(); //'Elantra', 'Hyundai'
+    let car1 = new Vehicle('Focus', 'Ford'); // 'Focus', 'Ford'
+    // car1.name = "Focus";
+    let car2 = new Vehicle('Elantra', 'Hyundai'); //'Elantra', 'Hyundai'
+    // car2.name = "Elantra"
 
     console.log(car1.name); // Output: Focus
     console.log(car2.name); // Output: Elantra

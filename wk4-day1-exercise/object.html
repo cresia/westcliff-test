@@ -5,15 +5,15 @@
 <h2>JavaScript Objects</h2>
 
 <script>
-var car = { 
-    type: 'Honda', 
-    model : 'Civic', 
-    price : '25000', 
-    displayInfo : function(){ 
-        console.log(`${} has many models but ${} is $${}`); 
-    } 
-} 
-car.displayInfo();  
+var car = {
+    type: 'Honda',
+    model : 'Civic',
+    price : '25000',
+    displayInfo : function(){
+        console.log(`${car.type} has many models but ${car.model} is $${car.price}`);
+    }
+}
+car.displayInfo();
 
 </script>
 
