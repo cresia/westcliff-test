@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Encapsulation</h2>
+
+<script>
+// Only works for arrays
+const doubleAllImperative = data => {
+  const doubled = [];
+  for (let i = 0, length = data.length; i < length; i++) {
+    doubled[i] = data[i] * 2;
+  }
+  return doubled;
+};
+
+//console.log here
+
+// Same as above, but works for anything with the  map operation.
+const doubleAllInterface = data => data.map(x => x * 2);
+
+const box = value => ({
+  map: f => box(f(value)),
+  toString: () => `box(${ value })`
+});
+
+//console.log here
+
+</script>
+
+
+</body>
+</html>
