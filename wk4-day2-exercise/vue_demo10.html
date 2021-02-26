@@ -9,20 +9,20 @@
 <body>
 
    <div id="demo">
-      <p>{{ message }}</p>
+      <p v-show = "isShowing">{{ message }}</p>
    </div>
-   
+
    <script>
 
       new Vue({
          el: "#demo",
-         data: { 
+         data: {
             message: 'Hello Vue!',
             isShowing: false
          }
       })
-         
+
    </script>
-    
+
 </body>
 </html>

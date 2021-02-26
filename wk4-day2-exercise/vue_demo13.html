@@ -9,21 +9,21 @@
 <body>
 
    <div id="demo">
-      <input type="radio" value="one">
-      <input type="radio" value="two">
+      <input type="radio" value="one" v-model = "picked">
+      <input type="radio" value="two" v-model = "picked">
       <p>{{ picked }}</p>
    </div>
-   
+
    <script>
 
       new Vue({
          el: "#demo",
-         data: { 
+         data: {
             picked: ''
          }
       })
-         
+
    </script>
-    
+
 </body>
 </html>

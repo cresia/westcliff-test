@@ -9,11 +9,11 @@
 <body>
 
    <div id = "databinding">
-      <div>VueJS Directive</div>
+      <div v-changestyle>VueJS Directive</div>
    </div>
 
    <script>
-      
+
       Vue.directive("changestyle",{
          bind(e1,binding, vnode) {
             console.log(e1);
@@ -30,6 +30,6 @@
       });
 
    </script>
-    
+
 </body>
 </html>

@@ -9,20 +9,20 @@
 <body>
 
    <div id="demo">
-      <p></p>
+      <p v-for = "name in taNames">{{ name }}</p>
    </div>
-   
+
    <script>
 
       new Vue({
          el: "#demo",
-         data: { 
+         data: {
             taNames: ['Jonas','Liz','Chris',
             'Reshae','Nico','Ilya','Yi']
          }
       })
-         
+
    </script>
-    
+
 </body>
 </html>
