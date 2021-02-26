@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 
 
 
@@ -20,11 +25,54 @@
   <title>Activities</title>
 </head>
 
-<body id="activities">
-
-  <div id="container">
+<!-- <body id="activities"> -->
+<body id="home">
     <header>
-      <!-- <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564"> -->
+      <div class="container-fluid">
+        <div class="navbar-main bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <div class="logo">
+                <a class="navbar-brand" href="#">
+                  <img class="" src="images/logo.png">
+                </a>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="main-menu">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="cliff.html">Cliffs</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+  <!-- <div id="container">
+    <header>
       <div class="main-header sticky-top">
         <div class="logo">
           <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
@@ -39,7 +87,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <h1>Activities</h1>
@@ -49,8 +97,12 @@
       them directly. For a list of activities, please refer to the table below:</p>
 
 
-      <table>
-        <caption>Activities at the CLiffs</caption>
+    <div class="row">
+      <div class="table-responsive">
+
+
+      <table class="table">
+        <!-- <caption>Activities at the CLiffs</caption> -->
         <thead>
           <tr>
             <th>Activity</th>
@@ -61,59 +113,88 @@
           </tr>
         </thead>
 
+
         <tbody>
           <tr>
             <td>Hiking</td>
-            <td class="selected">College Hikes</td>
-            <td class="selected">Family Fun</td>
-            <td class="selected">Treasure Trails</td>
-            <td class="selected">Canyon Explorer</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">College Hikes</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Family Fun</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal" >Treasure Trails</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Canyon Explorer</td>
           </tr>
           <tr>
-            <td>Kayak</td>
-            <td class="selected">Western Kayak Meetup</td>
+            <td data-toggle="modal" data-target="#myModal">Kayak</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Western Kayak Meetup</td>
             <td >Not Available</td>
-            <td class="selected">Youth Kayaking</td>
-            <td class="selected">Kayak Down</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Youth Kayaking</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Kayak Down</td>
           </tr>
           <tr>
             <td>Skydiving</td>
-            <td class="selected">Seacliff Diving</td>
-            <td class="selected">Sky is the limit</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Seacliff Diving</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Sky is the limit</td>
             <td >Not Available</td>
-            <td class="selected">Sky Diving for Beginners</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Sky Diving for Beginners</td>
           </tr>
           <tr>
             <td>Biking</td>
-            <td class="selected">Bicyle for One</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Bicyle for One</td>
             <td >Not Available</td>
-            <td class="selected">Bike Meetup Group</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Bike Meetup Group</td>
             <td>Not Available</td>
           </tr>
           <tr>
             <td>Camping</td>
-            <td class="selected">Youth Camp</td>
-            <td class="selected">Rent a Tent</td>
-            <td class="selected">Campgrounf Adventure</td>
-            <td class="selected">Sunset Camping</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Youth Camp</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Rent a Tent</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Campgrounf Adventure</td>
+            <td class="selected" data-toggle="modal" data-target="#myModal">Sunset Camping</td>
           </tr>
         </tbody>
       </table>
 
-      <div id="displaySelected">
-        <div id="result">
-          <h4>My Selected activities to enquire:</h4>
         </div>
-        <div id="sendinfo">
-          <input type="email" placeholder="k.horas.107@westcliff.edu">
-          <button>Get Info</button>
+
+    </div>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!--Modal Header-->
+            <!-- <div id="displaySelected"> -->
+              <div class="modal-header">
+                <h4 class="modal-title">My Selected activities to enquire:</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!--Modal Body -->
+              <div class="modal-body">
+                <div id="result"></div>
+              </div>
+
+              <!--Modal Footer-->
+              <div class="modal-footer">
+                <!-- <div id="sendinfo" class="modal-footer"> -->
+                <!-- <input type="email" placeholder="k.horas.107@westcliff.edu"> -->
+                <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activity</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Get Info</button>
+              </div>
+            <!-- </div> -->
+
+          </div>
         </div>
+
       </div>
+
     </main>
 
 
+
     <section>
-      <ul id="partners">
+      <div  id="partners" >
+      <!-- <ul class="row"> -->
         <!-- <li class="partner">
           <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
         </li>
@@ -132,13 +213,15 @@
         <li class="partner">
           <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
         </li> -->
-      </ul>
+      <!-- </ul> -->
+
+      </div>
     </section>
 
 
     <footer>
       <div id="nondisclaimer">
-        <div class="copy">&copy Copyright 2020 :: GreatCliffs.com </div>
+        <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com </div>
         <div class="social">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-instagram"></a>
@@ -152,7 +235,7 @@
       </div>
     </footer>
 
-  </div><!---End of container--->
+  <!---</div>End of container--->
 
 
 
@@ -160,6 +243,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+      <!-- Bootstrap jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!--Bootstrap Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 
   <!-- Partners -->

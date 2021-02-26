@@ -19,8 +19,8 @@ $(document).ready(function() {
       $(this).toggleClass("tdhighlight");
 
       if($(this).hasClass("tdhighlight")) {
-        $('#displaySelected').css("visibility", "visible");
-        $("#displaySelected").css("margin-top", "2em");
+        // $('#displaySelected').css("visibility", "visible");
+        // $("#displaySelected").css("margin-top", "2em");
         $("#result").append("<p>" + content + " at " + index1 + "</p>")
       } else {
         $('#result p:contains(' + content + ')').remove();

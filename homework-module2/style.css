@@ -10,10 +10,26 @@ header {
   background-size: 1500px;
 }
 
-#activities header {
+
+.logo {
+    position: relative;
+    width: 120px;
+    height: 100px;
+
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 12px;
+  }
+
+/* #activities header {
   background: no-repeat lightgrey url(images/runfly.jpg);
   background-size: 1500px;
-}
+} */
 
 #contact header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
@@ -76,6 +92,10 @@ header {
   color: #fff;
 }
 
+.navbar-expand-lg {
+  justify-content: flex-end;
+}
+
 /* Main */
 main h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -90,19 +110,28 @@ main p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.navbar-main {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255, 0.8) !important;
+  width: 60%;
+}
+.navbar-expand-lg {
+  justify-content: flex-end;
+}
+
+
 /* Partners */
 section {
   width: 100%;
   background-color: #4288c3;
 }
-
 section #partners {
-  width: 1200px;
+  /* width: 1200px; */
   padding: 2em 0 2em 0;
   margin: 0 auto;
   text-align: center;
 }
-
 section #partners .partner {
   display: inline-block;
   margin: 0 0.75em;
@@ -110,7 +139,6 @@ section #partners .partner {
   background-color: #fff;
   border-radius: 50%;
 }
-
 section #partners .partner img {
   width: 90px;
   height: 90px;
@@ -144,7 +172,7 @@ footer #disclaimer p {
   font-size: 0.85em;
   text-align: center;
 }
-
+/*
 footer #nondisclaimer .social .fa {
   padding: 15px;
   font-size: 15px;
@@ -153,6 +181,18 @@ footer #nondisclaimer .social .fa {
   text-decoration: none;
   margin: 0 4px;
   border-radius: 50%;
+} */
+
+footer #nondisclaimer .social .fa {
+  vertical-align: middle;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 3px;
+  border-radius: 50%;
+  line-height: 30px !important;
 }
 
 footer #nondisclaimer .social .fa:hover {
@@ -190,6 +230,7 @@ caption {
 
 thead {
   background: #BDE1FF;
+  text-align: center;
 }
 
 tbody {
@@ -201,8 +242,9 @@ th, td {
   width: 225px;
   height: 75px;
   vertical-align: middle;
-  border: solid 1px #852B1B;
+  border: solid 2px #852B1B;
 }
+
 
 th:first-child {
   width: 125px;
@@ -215,6 +257,7 @@ td:first-child {
   font-weight: bold;
   background: #BDE1FF;
 }
+
 
 
 fieldset {
@@ -373,3 +416,69 @@ span:first-child{
 #activities main #displaySelected #sendinfo input[type="email"] {
   width:200px;
 }
+
+
+/* Home */
+#home .main-col-content {
+  border: 1px solid #c0c0c0; /* Homework Week 6 Day 2 */
+  padding: 25px;
+  min-height: 400px; /* Homework Week 6 Day 2 */
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-main {
+      width: 85%;
+    }
+    footer #nondisclaimer .copy {
+      padding: 3.5em 0em 3.5em 0em;
+      text-align: center;
+      float: none;
+      font-size: 0.9em;
+    }
+    footer #nondisclaimer .social {
+      padding: 2.5em 0;
+      margin: 0;
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .logo img {
+      position: relative;
+      bottom: 8px;
+    }
+    #navbar-nav {
+      position: relative;
+    }
+    .main-menu {
+      width: 200px;
+      background-color:rgb(255, 255, 255);
+      position: absolute;
+      right: 1.7em;
+    }
+    .main-menu ul li {
+      border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    }
+    main {
+      padding: 3em 1em 3em 1em;
+      margin: 0;
+    }
+
+    #home .main-col-content {
+      padding: 25px;
+      min-height: 450px;
+      margin-top: 1em;
+    }
+  }
+
+
+  @media (max-width: 1200px) {
+  .navbar-main {
+    width: 80%;
+}
+  }
