@@ -7,9 +7,9 @@ var app = new Vue({
 
 var photo = new Vue({
   el: "#photos",
-  template: {
-      image: "<img src='images/chili.jpg' alt='White Chicken Chili' width='180'>"
-    // image: "images/chili.jpg"
+  data: {
+      image: "images/chili.jpg",
+      alt: "White Chicken Chili"
   }
 });
 
