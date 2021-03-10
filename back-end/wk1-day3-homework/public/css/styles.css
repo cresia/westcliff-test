@@ -48,6 +48,10 @@ main #photos img {
     margin: 0.75em;
     border: 0.85em solid rgb(255, 255, 255);
 }
+
+.reply {
+    margin-left:0.5rem;
+}
 section#blogposts {
     position: absolute;
     left: 20%;
