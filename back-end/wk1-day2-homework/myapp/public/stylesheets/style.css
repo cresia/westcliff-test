@@ -13,12 +13,13 @@ a:hover{
 nav{
   display:inline-block;
   margin:60px auto 45px;
-  background-color:#5597b4;
+  background-color:#000000;
   box-shadow:0 1px 1px #ccc;
   border-radius:2px;
   position: absolute;
   left: 23%;
   top: -55%;
+  width:75%;
 }
 
 nav a{
