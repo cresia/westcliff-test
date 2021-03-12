@@ -57,9 +57,14 @@ MongoClient.connect(url, {
     // console.log("Database created!");
     // db.close();
 
-    //---- create collection name: uscensus -----
+    //---- add collection/table to database -----
     var dbo = db.db('statsdb');
 
+    dbo.collection("uscensus").drop();
+    db.close();
+
+
+    //---- create collection name: uscensus -----
     // dbo.createCollection("uscensus", function (err, res) {
     //     if (err) throw err;
     //     console.log("Collection created");
@@ -75,8 +80,8 @@ MongoClient.connect(url, {
 
 
     //----- insert two new data to the table/collection: uscensus
-    // dbo.collection("uscensus").insertMany([{ "city": "Pacoima", "Zip": 91331, "state": "CA", "Income": 60360, "Age": 33},
-    // { "city": "Ketchikan", "Zip": 99950, "state": "AK", "Income": 00000, "Age": 00}], (err, res) =>{
+    // dbo.collection("uscensus").insertMany([{ "city": "Pacoima", "zip": 91331, "state": "CA", "income": 60360, "age": 33},
+    // { "city": "Ketchikan", "zip": 99950, "state": "AK", "income": 00000, "age": 00}], (err, res) =>{
     //     if (err) throw err;
     //     console.log(res);
     // });
@@ -93,15 +98,15 @@ MongoClient.connect(url, {
 
 
     //---- find the income for all cities in California -----
-    // var query = { state: /^CA/};
+    // var query = { state: "CA"};
     // dbo.collection("uscensus").find(query).toArray(function (err, result) {
     //     if (err) throw err;
-    //     console.log(result.income);
+    //     console.log(result);
     //     db.close();
     // })
 
     // //---- update Alaska for income: 38910 and age: 46 -------
-    // var query = { state: "Alaska"};
+    // var query = { state: "AK"};
     // var newValue = { $set: {income: "38910", age: "46"}}
     // dbo.collection("uscensus").find(query).toArray(function (err, result) {
     //     if (err) throw err;
@@ -111,11 +116,11 @@ MongoClient.connect(url, {
 
 
     //---- sort in asceding order -----
-    var queryAsc = { state: 1  };
-    dbo.collection("uscensus").find().sort(queryAsc).toArray(function (err, res) {
-        if (err) throw err;
-        console.log(res);
-        db.close();
-    })
+    // var queryAsc = { state: 1  };
+    // dbo.collection("uscensus").find().sort(queryAsc).toArray(function (err, res) {
+    //     if (err) throw err;
+    //     console.log(res);
+    //     db.close();
+    // })
 
 });
