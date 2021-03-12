@@ -60,8 +60,7 @@ MongoClient.connect(url, {
     //---- add collection/table to database -----
     var dbo = db.db('statsdb');
 
-    dbo.collection("uscensus").drop();
-    db.close();
+    // dbo.collection("uscensus").drop();
 
 
     //---- create collection name: uscensus -----
@@ -71,12 +70,19 @@ MongoClient.connect(url, {
     //     db.close();
     // });
 
+    //--- to check if the table is empty after dropping/ deleting the table- ----
+    // dbo.collection("uscensus").find().toArray((err, items) => {
+    //     console.log(items)
+    // });
+
 
     //---- insert stats to the table/collection: uscensus ------
     // dbo.collection("uscensus").insertMany(stats, function (err, res) {
     //     if (err) throw err;
     //     console.log(res);
     // });
+
+
 
 
     //----- insert two new data to the table/collection: uscensus
@@ -88,12 +94,11 @@ MongoClient.connect(url, {
 
 
     //---- find the zip code for Corona, NY -----
-    // var query = { city: "Corona", state: "NY"};
-    // dbo.collection("uscensus").find(query).toArray(function(err, result) {
-    // if(err) throw err;
-    // console.log(result[1].zip);
-    // db.close();
-    // })
+    var query = { city: "Corona", state: "NY"};
+    dbo.collection("uscensus").find(query).toArray(function(err, res) {
+    if(err) throw err;
+    console.log(res.zip);
+    })
 
 
 
