@@ -94,11 +94,11 @@ MongoClient.connect(url, {
 
 
     //---- find the zip code for Corona, NY -----
-    var query = { city: "Corona", state: "NY"};
-    dbo.collection("uscensus").find(query).toArray(function(err, res) {
-    if(err) throw err;
-    console.log(res.zip);
-    })
+    // var query = { city: "Corona", state: "NY"};
+    // dbo.collection("uscensus").find(query).toArray(function(err, res) {
+    // if(err) throw err;
+    // console.log(res.zip);
+    // })
 
 
 
@@ -112,20 +112,20 @@ MongoClient.connect(url, {
 
     // //---- update Alaska for income: 38910 and age: 46 -------
     // var query = { state: "AK"};
-    // var newValue = { $set: {income: "38910", age: "46"}}
-    // dbo.collection("uscensus").find(query).toArray(function (err, result) {
+    // var newValue = { $set: {income: "38910", age: "46"} }
+    // dbo.collection("uscensus").updateOne(query, newValue, function (err, res) {
     //     if (err) throw err;
-    //     console.log(result);
+    //     console.log(res);
     //     db.close();
     // })
 
 
     //---- sort in asceding order -----
-    // var queryAsc = { state: 1  };
-    // dbo.collection("uscensus").find().sort(queryAsc).toArray(function (err, res) {
-    //     if (err) throw err;
-    //     console.log(res);
-    //     db.close();
-    // })
+    var queryAsc = { state: 1  };
+    dbo.collection("uscensus").find().sort(queryAsc).toArray(function (err, res) {
+        if (err) throw err;
+        console.log(res);
+        db.close();
+    })
 
 });
