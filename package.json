@@ -23,7 +23,8 @@
   "homepage": "https://github.com/cresia/westcliff-test#readme",
   "description": "",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "mongodb": "^3.6.4"
