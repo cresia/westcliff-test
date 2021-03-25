@@ -1,10 +1,65 @@
+@import "colors";
+
 /* Variables */
+$font1: Arial, Helvetica, Sans-Serif;
+$font2: 'Sacramento', cursive;
+
+
+
+body{
+    background-color: $color1;
+}
 
 
 /* Nest Main */
 main {
     width: 1350px;
     min-height:535px;
+    background-color: $color3;
+    display: flex;
+    padding: 30px;
+    #intro-text{
+        background-color: $color4;
+        display: flex;
+        width:30%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        padding: 100px;
+        span{
+            font-family: $font2;
+            font-size: 2em;
+        }
+        h3{
+            font-family: $font1;
+            font-size: 30px;
+        }
+        p{
+            font-family: $font1;
+        }
+        .submit-button{
+            background-color: $color1;
+            color:white;
+            padding: 10px 20px;
+            border: 3px none $color1;
+            font-family: $font1;
+            font-size: 15px;
+        }
+    }
+    #intro-image{
+        display: flex;
+        width:70%;
+        height: 100%;
+        position: relative;
+        img{
+            width: 865px;
+            height: 539px;
+        }
+    }
+
 }
 
-// Mixin or Extend for button
+footer{
+    padding: 20px 0 0 50px;
+}
+
