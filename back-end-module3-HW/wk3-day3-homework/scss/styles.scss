@@ -1,4 +1,5 @@
 @import "colors";
+@import "nav";
 
 /* Variables */
 $font1: Arial, Helvetica, Sans-Serif;
@@ -18,26 +19,25 @@ main {
     background-color: $color3;
     display: flex;
     padding: 30px;
-    #intro-text{
+    #intro-text {
         background-color: $color4;
-        display: flex;
-        width:30%;
-        height: 100%;
-        position: relative;
+        width:37%;
+        // height: 100%;
         text-align: center;
-        padding: 100px;
-        span{
+        padding: 125px 21px 36px 20px;
+        // padding: 100px;
+        span {
             font-family: $font2;
             font-size: 2em;
         }
-        h3{
+        h3 {
             font-family: $font1;
             font-size: 30px;
         }
-        p{
+        p {
             font-family: $font1;
         }
-        .submit-button{
+        .submit-button {
             background-color: $color1;
             color:white;
             padding: 10px 20px;
@@ -46,20 +46,20 @@ main {
             font-size: 15px;
         }
     }
-    #intro-image{
-        display: flex;
-        width:70%;
-        height: 100%;
-        position: relative;
-        img{
-            width: 865px;
-            height: 539px;
+    #intro-image {
+        width: 60%;
+        // width:70%;
+        // height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            // width: 865px;
+            // height: 519px;
         }
     }
-
 }
 
-footer{
+footer {
     padding: 20px 0 0 50px;
 }
 

@@ -5,12 +5,13 @@ nav{
     ul{
         li{
             display: inline;
+            color: $color3;
             a:link, a:visited{
-                color: $color2;
+                color: $color3;
                 text-decoration: none;
             }
             a:hover, a:active {
-                color: $color6;
+                color: $color7;
                 text-decoration: underline;
             }
         }
