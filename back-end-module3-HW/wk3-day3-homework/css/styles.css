@@ -15,7 +15,6 @@ body {
 
 /* Nest Main */
 main {
-  width: 1350px;
   min-height: 535px;
   background-color: white;
   display: flex;
