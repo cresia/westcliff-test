@@ -63,6 +63,90 @@ main {
     }
 }
 
+#intro-register{
+  h3{
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+  }
+  label{
+      font-size: 14px;
+  }
+  input{
+      height: 20px;
+  }
+  button{
+    color: $color4;
+    width: 100%;
+    height: 40px;
+    background: #daaa0e;
+    margin: 0 auto;
+    border: none;
+  }
+  ul{
+    list-style: none;
+    color:red;
+    text-align: center;
+  }
+}
+
+#intro-thank{
+  h3{
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+  }
+}
+
+.listing-req {
+	h1 {
+		text-align: center;
+		margin: 0 0 2rem;
+	}
+}
+.form-registration {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	input {
+		width: 100%;
+		margin: 0px 0 10px;
+	}
+	.btn {
+		flex: 1 0 100%;
+	}
+}
+
+.register-button{
+  margin-left:60rem;
+}
+
+
+.listing-table {
+	width: 100%;
+  background-color: white;
+  text-align: center;
+	th {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		background: #000;
+		color: #fff;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+	td {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+}
+
+
 footer {
     width: 1350px;
     margin: 2em auto;
@@ -70,15 +154,15 @@ footer {
     font-size: $fontSizeSmall;
 }
 
-// @extend 
 button {
   color: $color4;
   width: 100px;
   height: 40px;
   background: $backgroundColor1;
   margin-top: 2em;
+  border:none;
 }
 .submit-buttton {
   @extend button;
-  border: 1px $color3;
+  color: $color3;
 }
