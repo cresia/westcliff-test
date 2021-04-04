@@ -8,12 +8,9 @@ rgba(0,0,0,0.5)
 rgba(0,0,0,0.24)
 rgb(22, 34, 42)
 rgb(58, 96, 115)
-
-
 //Fonts:
 Bitter
 FontAwesome
-
 ----------*/
 
 * {
@@ -21,6 +18,45 @@ FontAwesome
   padding: 0;
   box-sizing: border-box;
   font-family: "Bitter";
+}
+.header{
+    text-align: center;
+    background-color: rgb(58, 96, 115);
+    color: rgb(255,255,255);
+    h1{
+        padding: 100px;
+    }
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+#vue {
+    text-align: center;
+    margin: 0 auto;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.grid{
+    display: inline-block;
+    margin: 20px;
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    p{
+      font-size: 13px;
+      padding: 7px;
+    }
+}
+
+button{
+    padding: 12px 24px;
 }
 
 $max-width: 80em;
