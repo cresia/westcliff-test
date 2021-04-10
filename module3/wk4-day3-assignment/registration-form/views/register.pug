@@ -5,7 +5,6 @@ block content
         link(rel='preconnect' href='https://fonts.gstatic.com')
         link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
         link(rel='StyleSheet' href='css/styles.css' type='text/css')
-        link(rel='StyleSheet' href='css/nav.css' type='text/css')
         meta(charset='utf-8')
     body
         header
@@ -22,11 +21,11 @@ block content
             section#intro-text
                 span Simple Kitchen
                 h3
-                    | Simple &amp; Comforting 
+                    | Simple &amp; Comforting
                     br
                     |             Recipes All Year Round
             section#intro-register
-                
+
                 -data = data || {}
                 if errors
                     ul
@@ -51,6 +50,25 @@ block content
                         name="email"
                         class="form-control"
                         value=data.email
+                    )
+
+
+                    label(for="username") Username:
+                    input(
+                        type="username"
+                        id="username"
+                        name="username"
+                        class="form-control"
+                        value=data.username
+                    )
+
+                    label(for="password") Password:
+                    input(
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        value=data.password
                     )
                     button(type="submit" value="Register") Register
         footer
