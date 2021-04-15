@@ -7,3 +7,6 @@ export default class MyComponent extends React.Component {
           type="text" /></div>;
   }
 }
+
+
+//Notes: need to run "npm install" to create node_modules and package-lock.json
