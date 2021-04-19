@@ -1,19 +1,28 @@
 const express               =  require('express'),
       app                   =  express(),
       mongoose              =  require("mongoose"),
+      mongoSanitize         =  require('express-mongo-sanitize'),
       passport              =  require("passport"),
       bodyParser            =  require("body-parser"),
       LocalStrategy         =  require("passport-local"),
       passportLocalMongoose =  require("passport-local-mongoose"),
-      User                  =  require("./models/user")
+      User                  =  require("./models/user"),
+      rateLimit             =  require('express-rate-limit'),
+      xss                   =  require('xss-clean'),
+      helmet                =  require('helmet')
 
 //Connecting database
 mongoose.connect("mongodb://localhost/auth_demo");
 
 const expSession = require("express-session") ({
     secret:"mysecret",       //decode or encode session
-    resave: false,          
-    saveUninitialized:false    
+    resave: false,
+    saveUninitialized:true,
+    cookie: {
+        httpOnly: true,
+        secure: true,
+        maxAge: 1 * 60 * 1000 // 10 minutes
+    }
 });
 
 passport.serializeUser(User.serializeUser());       //session encoding
@@ -32,8 +41,24 @@ app.use(express.static("public"));
 //=======================
 //      O W A S P
 //=======================
+//Data Sanitization against NoSQL Injection Attactks
+app.use(mongoSanitize());
 
+const limit = rateLimit({
+    max: 100, // max requests
+    windowMs: 60 * 60 * 1000, // 1 hour of 'ban' /lockout
+    message: 'Too many requests' // message ot send
+});
+app.use('/routeName', limit); // Setting limiter on specific route
 
+//Preventing DOS Attacts - Body Parser
+app.use(express.json({ limit: '10kb' })); // Body limit is 10
+
+// Data Sanitization against XSS attacks
+app.use(xss());
+
+// Helmet to secure connection and data
+app.use(helmet());
 
 //=======================
 //      R O U T E S
@@ -58,7 +83,7 @@ app.get("/register",(req,res)=>{
 });
 
 app.post("/register",(req,res)=>{
-    
+
     User.register(new User({username: req.body.username,email: req.body.email,phone: req.body.phone}),req.body.password,function(err,user){
         if(err){
             console.log(err);
@@ -66,7 +91,7 @@ app.post("/register",(req,res)=>{
         }
         passport.authenticate("local")(req,res,function(){
             res.redirect("/login");
-        })    
+        })
     })
 })
 app.get("/logout",(req,res)=>{
@@ -85,6 +110,12 @@ app.listen(process.env.PORT || 3000,function (err) {
     if(err){
         console.log(err);
     }else {
-        console.log("Server Started At Port 3000");  
+        console.log("Server Started At Port 3000");
     }
 });
+
+
+
+//Notes:
+// in order to run the app, it needs to install package-lock.json and add node-module:
+// npm install and npm install express
