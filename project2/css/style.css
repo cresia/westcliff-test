@@ -94,8 +94,19 @@ form h1 {
 }
 
 
+/*------- Sale Page Content -----------*/
 
+.saleTitle {
+  color: red;
+  text-align: center;
+  margin:3rem;
+  font-weight: bold;
+  font-size: 5rem;
+}
 
+.col img {
+  width: 100%;
+}
 
 
 /*---------- Home images carousel ---------*/
