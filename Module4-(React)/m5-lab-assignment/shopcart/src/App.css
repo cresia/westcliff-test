@@ -1,4 +1,54 @@
-.App {
+.App-header {
+  background-color: skyblue;
+  color: black;
+  margin: auto;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.title{
+  padding: 15px;
+}
+
+.shoppingCart{
+  float: right;
+  padding-right: 100px;
+  padding-top: 40px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  display: flex;
+}
+
+.cartIcon{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.GroupItem{
+  padding: 50px !important;
+}
+
+.inputValue{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.itemcontent{
+  display: flex;
+}
+
+.quantityDisplay{
+  display: flex;
+  padding: 50px;
+}
+
+.quantity{
+  padding: 15px 0 0 30px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -21,4 +71,4 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
