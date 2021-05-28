@@ -9,7 +9,9 @@
     <p>O(log n)  and Quicksort example </p>
         <script>
             // add array variables here
-            
+            const smArr = [37, 29, 30];
+            const bigArr = [43, 59, 29, 18];
+
             const sort = arr => {
                 if (arr.length < 2) return arr;
 
@@ -28,6 +30,8 @@
                 ];
             };
             // add console here
+            console.log(sort(smArr));
+            console.log(sort(bigArr))
         </script>
 
 
