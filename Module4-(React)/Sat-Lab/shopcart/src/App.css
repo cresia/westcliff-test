@@ -49,15 +49,16 @@
   width: 200px;
   height: 50px;
   text-align: center;
-  margin-top:60px;
+  margin-top:24px;
 }
 
 .itemcontent{
   display: flex;
 }
 
-.quantity{
-  padding: 15px 0 0 30px;
+.itemQuantity {
+  border: 3px solid grey;
+  padding: 10px;
 }
 
 .updateButton{
@@ -85,4 +86,19 @@
 
 #cartBtn{
   margin-top: 20px;
+}
+
+/*---- Sorting Title Display ------*/
+.priceTitle {
+  margin-left:3rem;
+}
+
+.sortDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.selectOption {
+  margin-left:1rem;
 }

@@ -10,6 +10,9 @@ export default function Home(props) {
         shopitems={props.products}
         handleIncrease={props.handleIncrease}
         handleDecrease={props.handleDecrease}
+        sortType={props.sortType}
+        listNum={props.listNum}
+        onSort={props.onSort}
       />
     </div>
   );
