@@ -52,7 +52,10 @@ exports.inventories = (req, res) => {
   });
 };
 
-exports deleteInventory = (req, res) => {
+
+// exports.deleteInventory = (req, res) => { Inventory.findByIdAndRemove(req.params.id).select('-__v-_id').then(inventory => { if (!inventory) { res.status(404).json({ message: "No inventory found whith id = " + req.params.id, error: "404", }); } res.status(200).json({}); }).catch(err => { return res.status(500).send({ message: "Error -> Can't delete inventory with id = " + req.params.id, error: err.message }); }); };
+
+exports.deleteInventory = (req, res) => {
   Inventory.findByIdAndRemove(req.params.id).select('-__v-_id')
     .then(inventory => {
       if(!inventory) {
