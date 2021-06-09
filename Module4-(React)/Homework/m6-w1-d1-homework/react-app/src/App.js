@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import InventoryList from './InventoryList';
-import InventoryEdit from './InventoryEdit';
+import InventoryList from "./InventoryList";
+import InventoryEdit from "./InventoryEdit";
 import './App.css';
-
 
 class App extends Component {
   render() {
