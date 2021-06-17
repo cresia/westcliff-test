@@ -24,8 +24,6 @@ function Example() {
 render(<div>
 <App />
 <BarChart />
-{/* <Example /> */}
+
 
 </div>, document.getElementById("root"));
-
-
