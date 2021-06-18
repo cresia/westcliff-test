@@ -1,0 +1,37 @@
+{
+  "name": "animated-bar-chart-sphere-collapsible-tree",
+  "version": "1.0.0",
+  "description": "Combine three projects into one: barchart, sphere, and collapsible tree",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@react-vertex/core": "3.0.0",
+    "@react-vertex/dom-hooks": "1.11.0",
+    "@react-vertex/geometry-hooks": "3.0.0",
+    "@react-vertex/material-hooks": "3.0.0",
+    "@react-vertex/math-hooks": "2.0.0",
+    "@react-vertex/orbit-camera": "3.0.0",
+    "@vx/gradient": "0.0.192",
+    "@vx/group": "0.0.190",
+    "@vx/hierarchy": "0.0.179",
+    "@vx/shape": "0.0.179",
+    "classnames": "2.2.6",
+    "d3-hierarchy": "1.1.9",
+    "d3-timer": "1.0.9",
+    "prop-types": "15.7.2",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-move": "2.8.0",
+    "react-scripts": "1.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
