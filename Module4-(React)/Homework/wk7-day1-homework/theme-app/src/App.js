@@ -32,14 +32,16 @@ const Container = styled.div`
       height: 100vh;
       align-items:center;
       justify-content: center;
-      font-family: sans-serif`;
+      font-family: sans-serif
+      `;
 
 const SwitchTheme = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 50px;
-      height:75px`;
+      height:75px
+      `;
 
 
 const App = () => {
