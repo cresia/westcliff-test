@@ -1,11 +1,11 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 h1 {
   text-transform: uppercase;
@@ -27,7 +27,7 @@ p p {
   align-items: center;
 }
 
-
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -56,4 +56,4 @@ p p {
   to {
     transform: rotate(360deg);
   }
-}
+} */
