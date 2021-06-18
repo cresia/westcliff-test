@@ -13,17 +13,19 @@ export const theme1 = theme ("theme", {
   dark: "#2d2d2d",
 });
 
-const Container = styled.div`
-    ...
-    background-color: ${theme1};
-    `;
+// const Container = styled.div`
+//     ...
+//     background-color: ${theme1};
+//     `;
 
 export const theme2 = theme("theme", {
   light: "#000",
   dark: "#fff",
 })
 
-const Container = styled.div `
+const Container = styled.div`
+      ...
+      background-color: ${theme1};
       display: flex;
       flex-direction: column;
       width: 100vw;
@@ -32,12 +34,12 @@ const Container = styled.div `
       justify-content: center;
       font-family: sans-serif`;
 
-const SwitchTheme = styled.div `
+const SwitchTheme = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 50px;
-      height:75px;`;
+      height:75px`;
 
 
 const App = () => {
